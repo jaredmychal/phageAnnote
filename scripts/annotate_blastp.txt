@@ -1,0 +1,6 @@
+echo Adding BLASTP results
+    awk -v FS='\t' -v OFS='\t' '{{print $1, "BLASTP", "CDS", "START", "END", "note=Similar to " $2 " " $3}}' results/{params.sample_name}_blastp_alignment.tbl > results/edits/{params.sample_name}_blastp.txt
+    sed -i 's/\(note=Similar to [[:alpha:]]P_[[:digit:]]\+\.[[:digit:]] \)\(.*\)\( \[.*\)/product=\\2;\\1\\2\\3/g' results/edits/{params.sample_name}_blastp.txt
+    sed -i 's/product=.*hypothetical protein.*;note/product=hypothetical protein;note/; s/product=protein of unknown function/product=hypothetical protein/; s/product=unnamed protein product/product=hypothetical protein/; s/putative//g' results/edits/{params.sample_name}_blastp.txt
+    awk -v FS='\t' -v OFS='\t' 'NR==FNR{{a[$1]=$4;b[$1]=$5; next}}{{$4=a[$1]; $5=b[$1]; print}}' results/edits/{params.sample_name}.tlf results/edits/{params.sample_name}_blastp.txt > results/edits/{params.sample_name}_blastp.gff
+    awk -v FS='\t' -v OFS='\t' 'NR==FNR{{a[$3$4]=$6; next}}{{$3$4 in a; $9 = $9a[$3$4]; print}}' results/edits/{params.sample_name}_blastp.gff results/edits/{params.sample_name}_prokka.edit.gff > results/edits/{params.sample_name}_prokka.blastp.gff

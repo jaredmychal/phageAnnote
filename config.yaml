@@ -1,0 +1,16 @@
+# Path to input directory
+fast_files: 'raw_files'
+# Path to conda install
+conda_env: '/home/js/miniconda3/envs/phages'
+# Path to interproscan folder
+interproscan: '/home/js/my_interproscan/interproscan-5.38-76.0'
+# Path to eggnog mapper installation directory and script
+eggnog: '/home/js/eggnog-mapper/emapper.py'
+# Path to btssfinder folder
+btssfinder: '/home/js/BTSSFINDER'
+#path to gffread
+gffread: 'scripts/gff_tools/gffread'
+#hmmdb: '/home/jared/miniconda3/envs/PhagePipe/db/hmm/vog.hmm'
+hmmdb: 'hmm_pvog/pvog.hmm'
+#path to refseq_proteins for Viruses
+virus_refseq_protein: '/home/js/phageAnnote/viral_proteins/refseq_viral_proteins'

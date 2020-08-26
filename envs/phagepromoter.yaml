@@ -1,0 +1,14 @@
+name: phagepromoter
+channels:
+  - anaconda
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - biopython
+  - libgcc
+  - numpy
+  - pandas
+  - matplotlib
+  - openpyxl
+  - scikit-learn

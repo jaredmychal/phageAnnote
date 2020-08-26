@@ -1,0 +1,8 @@
+channels:
+ - default
+ - bioconda
+ - conda-forge
+dependencies:
+ - python=2.7
+ - diamond
+ - biopython 

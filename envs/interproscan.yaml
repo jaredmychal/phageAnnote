@@ -1,0 +1,6 @@
+channels:
+ - default
+ - bioconda
+ - conda-forge
+dependencies:
+ - openjdk=11.0.1
