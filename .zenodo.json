@@ -1,0 +1,26 @@
+{
+    "description": "<p>phageAnnote release</p>", 
+    "license": "other-open", 
+    "title": "jaredmychal/phageAnnote", 
+    "version": "phageAnnote v1.1", 
+    "upload_type": "software", 
+    "publication_date": "2020-08-26", 
+    "creators": [
+        {
+            "name": "Jared Schlechte"
+        }
+    ], 
+    "access_right": "open", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/jaredmychal/phageAnnote/tree/zenodo", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.4002973", 
+            "relation": "isVersionOf"
+        }
+    ]
+}
