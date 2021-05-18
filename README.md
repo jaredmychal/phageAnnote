@@ -15,3 +15,7 @@ smaple.master.gff3 is a sample of the resulting gff3 file produced at the end of
 4. Download and install Eggnog-mapper
 
 The config.yaml file should be updated to reflect your directory system.
+
+## Running pipeline
+
+Execute: snakemake --use-conda
