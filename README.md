@@ -22,6 +22,7 @@ PhageAnnote was designed and tested on Ubuntu 18.04
 5. Install conda (miniconda for example)
 6. Download phageAnnote repository into local directory
 7. Add raw sequence files to folder location specified in config.yaml
+8. bTSSfinder and other programs may need to be added to your $HOME path to work within conda.
 
 The config.yaml file should be updated to reflect your directory system and locations of specified programs.
 
