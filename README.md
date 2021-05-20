@@ -13,7 +13,7 @@ smaple.master.gff3 is a sample of the resulting gff3 file produced at the end of
 2. Download and install bTSSfinder https://www.cbrc.kaust.edu.sa/btssfinder/about.php
 3. Download and install TMHMM https://services.healthtech.dtu.dk/software.php
 4. Download and install Eggnog-mapper https://github.com/eggnogdb/eggnog-mapper
-5. Download phageAnnote code into local directory
+5. Download phageAnnote repository into local directory
 6. Add raw sequence files to folder location specified in config.yaml
 7. Download all available viral refseq protein files and add to specified location in config.yaml
 
